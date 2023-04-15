@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 455 422">
+  <defs>
+    <style>
+      .cls-1 {
+        letter-spacing: -.08em;
+      }
+
+      .cls-2 {
+        fill: #fdeff2;
+      }
+
+      .cls-3 {
+        letter-spacing: -.09em;
+      }
+
+      .cls-4 {
+        font-family: DazzleUnicase-Light, 'Dazzle Unicase';
+        font-size: 32px;
+        font-weight: 300;
+      }
+
+      .cls-4, .cls-5 {
+        fill: #595857;
+      }
+
+      .cls-6 {
+        letter-spacing: -.12em;
+      }
+
+      .cls-5 {
+        font-family: Smoothy-Regular, Smoothy;
+        font-size: 260px;
+      }
+
+      .cls-7 {
+        letter-spacing: 0em;
+      }
+
+      .cls-8 {
+        letter-spacing: -.08em;
+      }
+
+      .cls-9 {
+        letter-spacing: -.07em;
+      }
+
+      .cls-10 {
+        letter-spacing: -.03em;
+      }
+    </style>
+  </defs>
+  <ellipse class="cls-2" cx="227.5" cy="211" rx="227.5" ry="211"/>
+  <g>
+    <g>
+      <text class="cls-5" transform="translate(122.75 282.69)"><tspan x="0" y="0">S</tspan></text>
+      <text class="cls-5" transform="translate(186.16 286.85)"><tspan x="0" y="0">G</tspan></text>
+    </g>
+    <text class="cls-4" transform="translate(97.85 329.18)"><tspan class="cls-6" x="0" y="0">s</tspan><tspan class="cls-3" x="9.89" y="0">a</tspan><tspan class="cls-8" x="30.59" y="0">t</tspan><tspan x="43.71" y="0">o</tspan><tspan class="cls-1" x="72.99" y="0">k</tspan><tspan x="88.99" y="0">o g</tspan><tspan class="cls-7" x="156.16" y="0">r</tspan><tspan class="cls-10" x="174.97" y="0">u</tspan><tspan class="cls-9" x="195.65" y="0">s</tspan><tspan x="207.33" y="0">on</tspan></text>
+  </g>
+</svg>
