@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.typekit.net/fxl4juw.css">
     <link rel="stylesheet" type="text/css" href="./css/style.css"/>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Contact Me!</title>
@@ -13,38 +14,67 @@
     <picture>
       <source srcset="./img/logos/satokogruson_logo.svg" media="(max-width:200px)">
       <img src="./img/logos/satokogruson_logo.svg" 
-      width="100"
-      height="100"/>
+      width="50"
+      height="50"/>
       </picture>
-      <div class="subnav">
-        <button class="subnavbtn">Works<i class="fa fa-caret-down"></i></button>
-        <div class="subnav-content">
-          <a href="freshfusion.html">FreshFusion</a>
-          <a href="#link2">findMyDoc</a>
-          <a href="#link3">Traveco</a>
-          <a href="#link4">StuddyBuddy</a>
-        </div>
-      </div>
-      <li><a href="about.html">About Me</a></li>
-      <li><a href="contact.html">Contact Me</a></li>
-    </div> 
+      <nav>
+
+        <div class="navbar">
+            <a href="index.html">Home</a>
+            <div class="subnav">
+              <button class="subnavbtn">Work <i class="fa fa-caret-down"></i></button>
+              <div class="subnav-content">
+                <a href="freshfusion.html">FreshFusion</a>
+                <a href="#link2">findMyDoc</a>
+                <a href="#link3">Traveco</a>
+                <a href="studdybuddy.html">StuddyBuddy</a>
+              </div>
+            </div>
+            <a href="about.html">About Me</a>
+            <a href="contact.html">Contact Me!</a>
+          </div>
+    
+    </nav>
+    <style>
+      #titleHeader {
+          background-color: transparent;
+          color: #d0576b;
+          padding:40px;
+          text-align: left;
+      }
+      #bodyText {
+          background-color: transparent;
+          color: #595857;
+          padding:40px;
+          text-align: left;
+      }
+      #subTitle {
+          background-color: transparent;
+          color: #595857;
+          padding:40px;
+          text-align: left;
+      }
+  
+  
+  
+  </style>
 </head>
 <body>
     <div>
-        <h1>Contact Me!</h1>
+        <h1 id="titleHeader">Contact Me!</h1>
         <span>In need of a UI Designer? Let's get in touch!</span>
     </div>
     <div class="container">
         <form action="action_page.php">
       
-          <label for="name">Name</label>
-          <input type="text" id="name" name="name" placeholder="Your Name...">
+          <label for="name">Name<br /></label>
+          <input type="text" id="name" name="name" placeholder="Your Name..."><br />
 
-          <label for="email">Email Address</label>
-          <input type="text" id="email" name="email" placeholder="Your Email Address...">
+          <label for="email">Email Address<br /></label>
+          <input type="text" id="email" name="email" placeholder="Your Email Address..."><br />
      
-          <label for="country">Which Country do you reside in?</label>
-          <select id="country" name="country">
+          <label for="country">Which Country do you reside in?<br /></label>
+          <select id="country" name="country"> <br />
             <option value="australia">Australia</option>
             <option value="canada">Canada</option>
             <option value="germany">Germany</option>
@@ -52,12 +82,14 @@
             <option value="uk">UK</option>
             <option value="usa">USA</option>
 
-          </select>
+          </select><br />
       
-          <label for="message">Message</label>
-          <textarea id="message" name="message" placeholder="Your Message..." style="height:200px"></textarea>
+          <label for="message">Message<br /></label>
+          <textarea id="message" name="message" placeholder="Your Message..." style="height:200px"></textarea><br />
       
           <input type="submit" value="Submit">
+
+       
       
         </form>
       </div>   

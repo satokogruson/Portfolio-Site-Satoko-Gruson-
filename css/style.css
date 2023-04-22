@@ -1,42 +1,213 @@
-p{
-    color:#595857;
-    font: size 24px;
+body {
+    background-color: #ffffff;
     font-family: "aktiv-grotesk", sans-serif;
+    font-size: 18px; 
+    font-weight: 400; 
+    line-height: 1.6; 
+    color: #595857;
+  }
+  
+  h2, h3, h4 {
+    line-height: 1.4;
+  }
+  h1 {
+    color:#d0576b;
+    font: size 35px;
+    line-height:2;
+    font-family: "dazzle-unicase", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  h2 {
+    font-size: 30px;
+    font-weight: 700;
+  }
+  
+  h3 {
+    font-size: 24px;
     font-weight: 400;
-    font-style: normal;
-}
-span{
-    color:#595857;
-    font: size 24px;
-    font-family: "aktiv-grotesk", sans-serif;
+  }
+  h4 {
+    font-size: 20px;
     font-weight: 400;
-    font-style: normal;
-}
-
-h1{
-    color:#333232;
-    font: size 64px;
-    font-family: "dazzle-unicase", sans-serif;
-    font-weight: 500;
-    font-style: normal;
-}
-
-h2{
-    color:#333232;
-    font: size 36px;
-    font-family: "dazzle-unicase", sans-serif;
-    font-weight: 500;
-    font-style: normal;
-}
-
-h3{
-    color:#333232;
-    font: size 30px;
-    font-family: "dazzle-unicase", sans-serif;
-    font-weight: 500;
-    font-style: normal;
-}
+  }
 
 img {
     width: 100%;
+  }
+
+a {
+    color: #007bbb;
+    text-decoration: none; 
+    font: size 18px;
+    line-height:1.5;
+    font-family: "aktiv-grotesk", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+  
+a:visited { 
+    color: #7058a3;
+  }
+
+a:hover {
+  color: #d0576b;
+  text-decoration: underline; 
+}
+
+a:active { 
+    color: #994c30;
+  }
+
+button {
+    background-color:transparent;
+    color:azure;
+    font: size 18px;
+    line-height:1.5;
+    font-family: "aktiv-grotesk", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    padding: 10px 20px;
+    }
+
+button:hover {
+        background-color: transparent;
+        color:#333232;
+    }
+
+button:active {
+        background-color: #7f7f7e;
+    }
+
+button:focus {
+        border:2px solid azure;
+    }
+
+.button {
+        display: inline-block; 
+        background-color: #d0576b;
+        color: #ffffff; 
+        font-weight: 400;
+        padding: 10px;
+        border-radius: 3px;
+        border-bottom: 2px solid #cc5669; 
+        transition: 0.2s opacity;
+      }
+.button:hover {
+        opacity: 0.8; /* Reduces the opacity of the button to 80% */
+        text-decoration: none;
+      }
+
+
+.navbar {
+    overflow: hidden;
+    background-color: transparent;
+    font-family: "aktiv-grotesk", sans-serif;
+}
+
+.navbar a {
+        float: left;
+        color: #595857;
+        text-align: center;
+        padding: 10px 16px;
+        text-decoration: none;
+        font-size: 18px;
+          }
+    
+.dropdown {
+            float: left;
+            overflow: hidden;
+            }
+
+.dropdown .dropbtn {
+        font-size: 18px;
+        border: none;
+        outline: none;
+        color: #595857;
+        padding: 14px 16px;
+        background-color: #f6bbc5;
+        font-family: inherit; /* Important for vertical align on mobile phones */
+        margin: 0; /* Important for vertical align on mobile phones */
+    }
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+        background-color: #f6bbc5;
+        }
+
+.dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+          }
+
+.dropdown-content a {
+            float: none;
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+          }
+
+.dropdown-content a:hover {
+            background-color: #ddd;
+          }
+
+.dropdown:hover .dropdown-content {
+            display: block;
+          }
+
+/* The subnavigation menu */
+.subnav {
+    float: left;
+    overflow: hidden;
+  }
+  
+  /* Subnav button */
+  .subnav .subnavbtn {
+    font-size: 18px;
+    border: none;
+    outline: none;
+    color: #595857;
+    padding: 10px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+  }
+  
+  /* Add a red background color to navigation links on hover */
+  .navbar a:hover, .subnav:hover .subnavbtn {
+    background-color: #f6bbc5;
+  }
+  
+  /* Style the subnav content - positioned absolute */
+  .subnav-content {
+    display: none;
+    position: absolute;
+    left: 0;
+    background-color: #f6bbc5;
+    width: 100%;
+    z-index: 1;
+  }
+  
+  /* Style the subnav links */
+  .subnav-content a {
+    float: left;
+    color: white;
+    text-decoration: none;
+  }
+  
+  /* Add a grey background color on hover */
+  .subnav-content a:hover {
+    background-color: #eee;
+    color: black;
+  }
+  
+  /* When you move the mouse over the subnav container, open the subnav content */
+  .subnav:hover .subnav-content {
+    display: block;
   }
