@@ -7,61 +7,38 @@
     <link rel="stylesheet" type="text/css" href="./css/style.css"/>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://use.typekit.net/fxl4juw.css">
+
     <title>UI/UX Design Portfolio</title>
-    <link href="./img/logos/favicon.ico" rel="shortcut icon"> 
-    <picture>
-        <source srcset="./img/logos/satokogruson_logo.svg" media="(max-width:200px)">
-        <img src="./img/logos/satokogruson_logo.svg" 
-        width="50"
-        height="50"/>
-      </picture>
-
-      <nav>
-
-        <div class="navbar">
-            <a href="index.html">Home</a>
-            <div class="subnav">
-              <button class="subnavbtn">Work <i class="fa fa-caret-down"></i></button>
-              <div class="subnav-content">
-                <a href="freshfusion.html">FreshFusion</a>
-                <a href="#link2">findMyDoc</a>
-                <a href="#link3">Traveco</a>
-                <a href="studdybuddy.html">StuddyBuddy</a>
-              </div>
-            </div>
-            <a href="about.html">About Me</a>
-            <a href="contact.html">Contact Me!</a>
-          </div>
+    <link rel="icon" type="image/png" href="./img/logos/favicon.ico" sizes="32x32" />
     
-    </nav>
-    <style>
-      #titleHeader {
-          background-color: transparent;
-          color: #d0576b;
-          padding:40px;
-          text-align: left;
-      }
-      #bodyText {
-          background-color: transparent;
-          color: #595857;
-          padding:40px;
-          text-align: left;
-      }
-      #subTitle {
-          background-color: transparent;
-          color: #595857;
-          padding:40px;
-          text-align: left;
-      }
+<header>
+
+      
   
-  
-  
+  <style>
+ 
   </style>
+  
+  <img class = "logo" src="./img/logos/satokogruson_logo.svg" 
+        width="48"
+        height="48"/>
+        <nav>
+            <ul class="nav_links">
+                <li><a href="index.html">Work</a></li>
+                <li><a href="about.html">About Me</a></li>
+            </ul>
+        </nav>
+        <a class = "cta" href="contact.html"><button>Contact</button></a>
+
+</nav>
+  </header>
 </head>    
 <body>
 
-            <div>
+            <div id = "casestudy">
+              <div class="container">
                <div>
+
                <h1 id="titleHeader">Case Study - FreshFusion</h1>
 
                <picture> <source srcset="./img/FreshFusion/05 Mock Up Images@1x.jpg" media="(max-width:767px)">
@@ -89,9 +66,12 @@
         <img src="./img/FreshFusion/FreshFusion iPad@2x.png" alt="FreshFusion MockUps">
     </picture>
 
-
-
 </div>
 
 </body>
+
+<footer>
+  <p id="bodyText">&copy; Satoko Gruson 2023</p>
+
+</footer>
 </html>

@@ -1,213 +1,237 @@
-body {
-    background-color: #ffffff;
+* {
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+  }
+
+  li, a, button {
     font-family: "aktiv-grotesk", sans-serif;
-    font-size: 18px; 
-    font-weight: 400; 
-    line-height: 1.6; 
-    color: #595857;
-  }
-  
-  h2, h3, h4 {
-    line-height: 1.4;
-  }
-  h1 {
-    color:#d0576b;
-    font: size 35px;
-    line-height:2;
-    font-family: "dazzle-unicase", sans-serif;
-    font-weight: 300;
-    font-style: normal;
-  }
-  
-  h2 {
-    font-size: 30px;
-    font-weight: 700;
-  }
-  
-  h3 {
-    font-size: 24px;
-    font-weight: 400;
-  }
-  h4 {
-    font-size: 20px;
-    font-weight: 400;
+    font-weight:400;
+    font-size: 16px; 
+    color:rgb(89, 88, 87);
+    text-decoration: none;
   }
 
-img {
-    width: 100%;
+  header {
+  display:flex;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: #ffffff;
+  padding:30px 5%;
+  position: relative;
   }
 
-a {
-    color: #007bbb;
-    text-decoration: none; 
-    font: size 18px;
-    line-height:1.5;
-    font-family: "aktiv-grotesk", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-}
-  
-a:visited { 
-    color: #7058a3;
+  .logo {
+    cursor:pointer;
+    margin-right:auto;
   }
 
-a:hover {
-  color: #d0576b;
-  text-decoration: underline; 
-}
+  .nav_links li {
+    display: inline-block;
+    padding: 0px 20px;
+  }
 
-a:active { 
-    color: #994c30;
+  .nav_links li a {
+    transition: all 0.3s ease 0s;
+  }
+
+  .nav_links li a:hover {
+    color:#007bbb
   }
 
 button {
-    background-color:transparent;
-    color:azure;
-    font: size 18px;
-    line-height:1.5;
-    font-family: "aktiv-grotesk", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    padding: 10px 20px;
-    }
-
-button:hover {
-        background-color: transparent;
-        color:#333232;
-    }
-
-button:active {
-        background-color: #7f7f7e;
-    }
-
-button:focus {
-        border:2px solid azure;
-    }
-
-.button {
-        display: inline-block; 
-        background-color: #d0576b;
-        color: #ffffff; 
-        font-weight: 400;
-        padding: 10px;
-        border-radius: 3px;
-        border-bottom: 2px solid #cc5669; 
-        transition: 0.2s opacity;
-      }
-.button:hover {
-        opacity: 0.8; /* Reduces the opacity of the button to 80% */
-        text-decoration: none;
-      }
-
-
-.navbar {
-    overflow: hidden;
-    background-color: transparent;
-    font-family: "aktiv-grotesk", sans-serif;
+  margin-left: 20px;
+  padding: 9px 25px;
+  background-color:rgb(89, 88, 87,1);
+  border: none;
+  color:#ffffff;
+  border-radius: 50px;
+  cursor:pointer;
+  transition: all 0.3s ease 0s;
 }
 
-.navbar a {
-        float: left;
-        color: #595857;
-        text-align: center;
-        padding: 10px 16px;
-        text-decoration: none;
-        font-size: 18px;
-          }
-    
-.dropdown {
-            float: left;
-            overflow: hidden;
-            }
+button:hover {
+  background-color:rgb(89, 88, 87,0.8); 
+}
 
-.dropdown .dropbtn {
-        font-size: 18px;
-        border: none;
-        outline: none;
-        color: #595857;
-        padding: 14px 16px;
-        background-color: #f6bbc5;
-        font-family: inherit; /* Important for vertical align on mobile phones */
-        margin: 0; /* Important for vertical align on mobile phones */
+.btn-primary {
+  padding: 8px 16px;
+  background-color:rgb(89, 88, 87,1);
+  border: none;
+  position: relative;
+  overflow: hidden;
+  color:#ffffff;
+  border-radius: 50px;
+  cursor:pointer;
+  transition: all 0.3s ease 0s;
+}
+
+.btn-primary:hover {
+  background-color:rgb(89, 88, 87,0.8); 
+}
+
+  .main {
+    padding:25px 5px 15px 5px;
+    margin: 25px;
+  }
+
+  .hero {
+    padding:25px 5px 15px 5px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+
+  body {
+    background-color: #ffffff;
+    font-family: "aktiv-grotesk", sans-serif;
+    font-size: 16px; 
+    font-weight: 400; 
+    line-height: 1.6; 
+    color: #999796;
+    margin: 0 auto;
+  }
+
+  .row {
+    margin: 8px -16px;
+  }
+
+  .row,
+  .row > .column {
+    padding: 8px;
+  }
+
+  .column {
+    float: left;
+    width: 100%;
+  }
+
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+/* Create four equal columns that floats next to each other */
+.column {
+  width: 25%;
+}
+
+.content {
+  background-color: #fef4f4;
+  padding:20px 10px 20px 10px;
+  height:max-content;
+  overflow:hidden;
+  box-shadow: 2px 4px 3px rgba(22, 22, 22, 0.1)  ; 
+  -webkit-box-shadow: 2px 4px 3px rgba(22, 22, 22, 0.1)  ; 
+  -moz-box-shadow: 2px 4px 3px rgba(22, 22, 22, 0.1)  ;
+  position: relative;
+}
+
+@media screen and (max-width:1400px) {
+  .column {
+    width: 100%;
+  }
+}
+
+#work.row { padding-bottom: 25px; border-bottom: transparent; }
+
+  .container {
+    padding:25px 5px 15px 5px;
+    margin: 25px;
+  }
+
+div {
+    margin: o auto;
+
+}
+
+.div2 {
+  border: 1px transparent;
+  clear: inherit;
+}
+
+.text-wrapper { display: flex; }
+
+span{display:inline;
+}
+
+
+  h1, h2, h3, h4 {
+    line-height: 1.4;
+    font-family: "dazzle-unicase", sans-serif;
+    font-weight: 300;
+    line-height:2;
+    margin: 0 auto;
+  }
+  h1 {
+    color:#595857;
+    font: size 36px;
+    font-family: "dazzle-unicase", sans-serif;
+    font-style: normal;
+    margin: 0 auto;
+    word-break: break-all;
+  }
+  
+  h2 {
+    color:#595857;
+    font-size: 28px;
+    margin: 0 auto;
+  }
+  
+  h3 {
+    color:#595857;
+    font-size: 24px;
+    margin: 0 auto;
+  }
+  h4 {
+    color:#595857;
+    font-size: 20px;
+    margin: 0 auto;
+  }
+
+.img {
+    width: 100%;
+  }
+  
+
+    .column1of2,.column2of2 {
+      width:300px;
+      margin:10px;
+      float:left;
+      background-color:#fdeff2;
     }
 
-.navbar a:hover, .dropdown:hover .dropbtn {
-        background-color: #f6bbc5;
-        }
+    .footer {
+      text-align: left;
+      padding: 10px
+    }
 
-.dropdown-content {
-            display: none;
-            position: absolute;
-            background-color: #f9f9f9;
-            min-width: 160px;
-            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-            z-index: 1;
-          }
+    ul#horizontal-list {
+      width: auto;
+      list-style: none;
+      padding-top: 20px;
+      }
+      ul#horizontal-list li {
+        display: inline;
+      }
+  
+      input[type="text"],
+      input[type="email"],
+      select,
+      textarea {
+        font: 1.25rem / 1.5 sans-serif;
+        font-family: "aktiv-grotesk", sans-serif;
+        display: block;
+        box-sizing: border-box;
+        width: 100%;
+        padding: 0.5rem 0.75rem;
+      }
 
-.dropdown-content a {
-            float: none;
-            color: black;
-            padding: 12px 16px;
-            text-decoration: none;
-            display: block;
-            text-align: left;
-          }
-
-.dropdown-content a:hover {
-            background-color: #ddd;
-          }
-
-.dropdown:hover .dropdown-content {
-            display: block;
-          }
-
-/* The subnavigation menu */
-.subnav {
-    float: left;
-    overflow: hidden;
-  }
-  
-  /* Subnav button */
-  .subnav .subnavbtn {
-    font-size: 18px;
-    border: none;
-    outline: none;
-    color: #595857;
-    padding: 10px 16px;
-    background-color: inherit;
-    font-family: inherit;
-    margin: 0;
-  }
-  
-  /* Add a red background color to navigation links on hover */
-  .navbar a:hover, .subnav:hover .subnavbtn {
-    background-color: #f6bbc5;
-  }
-  
-  /* Style the subnav content - positioned absolute */
-  .subnav-content {
-    display: none;
-    position: absolute;
-    left: 0;
-    background-color: #f6bbc5;
-    width: 100%;
-    z-index: 1;
-  }
-  
-  /* Style the subnav links */
-  .subnav-content a {
-    float: left;
-    color: white;
-    text-decoration: none;
-  }
-  
-  /* Add a grey background color on hover */
-  .subnav-content a:hover {
-    background-color: #eee;
-    color: black;
-  }
-  
-  /* When you move the mouse over the subnav container, open the subnav content */
-  .subnav:hover .subnav-content {
-    display: block;
-  }
+      .col-container {
+        display: flex;
+        width: 100%;
+      }
+      .col {
+        flex: 1;
+        padding: 16px;
+      }

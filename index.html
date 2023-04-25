@@ -8,125 +8,124 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://use.typekit.net/fxl4juw.css">
 
+
+
     <title>UI/UX Design Portfolio</title>
     <link rel="icon" type="image/png" href="./img/logos/favicon.ico" sizes="32x32" />
 
-    <picture>
-        <source srcset="./img/logos/satokogruson_logo.svg" media="(max-width:200px)">
-        <img src="./img/logos/satokogruson_logo.svg" 
-        width="50"
-        height="50"/>
-    </picture>
+<header>
 
 <style>
-    #titleHeader {
-        background-color: transparent;
-        color: #d0576b;
-        padding:40px;
-        text-align: left;
-    }
-    #bodyText {
-        background-color: transparent;
-        color: #595857;
-        padding:40px;
-        text-align: left;
-    }
-    #subTitle {
-        background-color: transparent;
-        color: #595857;
-        padding:40px;
-        text-align: left;
-    }
+
+
 </style>
 
-<nav>
+<img class = "logo" src="./img/logos/satokogruson_logo.svg" 
+        width="48"
+        height="48"/>
+        <nav>
+            <ul class="nav_links">
+                <li><a href="index.html">Work</a></li>
+                <li><a href="about.html">About Me</a></li>
+            </ul>
+        </nav>
+        <a class = "cta" href="contact.html"><button>Contact</button></a>
 
-    <div class="navbar">
-        <a href="index.html">Home</a>
-        <div class="subnav">
-          <button class="subnavbtn">Work <i class="fa fa-caret-down"></i></button>
-          <div class="subnav-content">
-            <a href="freshfusion.html">FreshFusion</a>
-            <a href="#link2">findMyDoc</a>
-            <a href="#link3">Traveco</a>
-            <a href="studdybuddy.html">StuddyBuddy</a>
-          </div>
-        </div>
-        <a href="about.html">About Me</a>
-        <a href="contact.html">Contact Me!</a>
-      </div>
-
-</nav>
+</header>
 
 </head>      
 <body>
-     <div>
-        <div>
-        <h1 id="titleHeader">Hi, I'm Satoko! Nice to meet you Virtually!</h1>
-        <span id="bodyText">I am a UI/UX Designer based in Munich, Germany. </span>
+    
+<div class ="main">
+
+        <h1>Hi, I'm Satoko! Nice to meet you Virtually!</h1>
+        <span>I am a UI/UX Designer based in Munich, Germany. </span>
         <p id="bodyText">My multi-cultural background and a Masters in Localization Management will help you widen your target audience &#128522;</p>
+        <div class="row">   
+<h2>My Work</h2>
 
-        </div>
 
-<div>
-<h2 id="subTitle">My Work</h2>
-</div>
-<div>
-    <div>
-    <picture> <source srcset="./img/FreshFusion/cover_FreshFusion@1.png" media="(max-width:767px)">
-        <img src="./img/FreshFusion/cover_FreshFusion@2.png"/>
-    </picture>
-    </div>
+    <div class="column">
+      <div class="content">
+            <img src="./img/FreshFusion/cover_FreshFusion@2.png" alt="FreshFusion" style="width:100%"/>
 
-    <div>
-    <h3 id="subTitle">FreshFusion</h3>
-    </div>
-    <div>
-    <p id="bodyText">
-    FreshFusion is an e-grocery and meal kit delivery service that differentiates itself from competitors by a strong brand that appeals to busy families and professionals.  
+        <h3>FreshFusion</h3>
+        <br>
+        <p>
+            An e-grocery and meal kit delivery service that differentiates itself from competitors by a strong brand that appeals to busy families and professionals.  
+        </p>
+        <br>
+        <a class= "btn-primary" href="freshfusion.html">View Project</a>
+
+</div> 
+</div> 
+
+<div class="column">
+        <div class="content">
+            <img src="./img/StuddyBuddy/cover_StuddyBuddy@2.png" alt="FreshFusion" style="width:100%"/>
+    
+        <h3>StuddyBuddy</h3>
+        <br>
+        <p>
+            A Study planning app for high school and college students who want to manage their assignments and tasks and collaborate with their peers. 
+        </p>
+        <br>
+        <a class= "btn-primary" href="studdybuddy.html">View Project</a>
+
+</div> 
+</div> 
+
+<div class="column">
+    <div class="content">
+        <img src="./img/Traveco/cover_Traveco@2x.png" alt="Traveco" style="width:100%"/>
+
+    <h3>Traveco</h3>
+    <br>
+    <p>
+        A location-based services travel app for the eco-conscious traveler, who want simple and map-centric navigation. 
     </p>
-    <a href="freshfusion.html" class="button">View Project</a>
-    </div>
-</div>
-<div></div>
-<div></div>
+    <br>
+    <a class= "btn-primary" href="traveco.html">View Project</a>
 
-<div>
-    <div>
-    <picture> <source srcset="./img/StuddyBuddy/cover_StuddyBuddy@1.png" media="(max-width:767px)">
-        <img src="./img/StuddyBuddy/cover_StuddyBuddy@2.png"/>
-    </picture>
-    </div>
-    <div>
-    <h3>StuddyBuddy</h3>
-    </div>
-    <div>
-    <pp id="bodyText">
-        A Study planning app for high school and college students who want to manage their assignments and tasks and collaborate with their peers. 
+</div> 
+</div> 
+<div class="column">
+    <div class="content">
+        <img src="./img/findMyDoc/cover_findMyDoc@2x.png" alt="findMyDoc" style="width:100%"/>
+
+    <h3>findMyDoc</h3>
+    <br>
+    <p>
+        Tired of constantly searching and booking doctor appointments and managing your prescription medications?
     </p>
-    <a href="studdybuddy.html" class="button">View Project</a>
-    </div>
-</div>    
+    <br>
+    <a class= "btn-primary" href="findMyDoc.html">View Project</a>
+
+</div> 
+</div> 
+</div> 
+</div> 
+   
+
 
 </body>
 
 <footer>
+    <div class ="main">
+        <h2>Contact Me!</h2>
+       <p>If you are interested in my work, please get in touch!</p>
+       <br> 
+        <a class="btn-primary" href="contact.html">Contact Me!</a>    
     <div>
-   <h2>Contact Me!</h2> 
-   <pp id="bodyText">If you are interested in my work, please get in touch!</p>
-    </div>
-    <div>   
-    <a href="satokogruson@gmail.com" class="button">Contact Me!</a>    
-    </div>
-    <div>
-<ul>
-    <li><a href="https://www.linkedin.com/in/satokogruson/" target="_blank"><img src="css/logo/linkedin_logo.svg" alt=""></a></li>
-    <li><a href="https://www.behance.net/satokogruson" target="_blank"><img src="css/logo/behance_logo.svg" alt=""></a></li>
-</ul>
- 
-    </div>     
+    <ul type="none">
+        <ul id="horizontal-list">
+        <li><a href="https://www.linkedin.com/in/satokogruson/" target="_blank"><img src="css/logo/linkedin_logo.svg" width="32px" alt="LinkedIn Logo"></a></li>
+        <li><a href="https://www.behance.net/satokogruson" target="_blank"><img src="css/logo/behance_logo.svg" width="32px" alt=""></a></li>
+    </ul>
+    </div>  
+    <p>&copy; Satoko Gruson 2023</p>
+</div> 
+    
+    </footer>
 
-<pp id="bodyText">Copyright Satoko Gruson 2023</p>
-</div>
-</footer>
 </html>

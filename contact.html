@@ -9,60 +9,62 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Contact Me!</title>
     <link rel="icon" type="image/png" href="./img/logos/favicon.ico" sizes="32x32" />
-
-
-    <picture>
-      <source srcset="./img/logos/satokogruson_logo.svg" media="(max-width:200px)">
-      <img src="./img/logos/satokogruson_logo.svg" 
-      width="50"
-      height="50"/>
-      </picture>
-      <nav>
-
-        <div class="navbar">
-            <a href="index.html">Home</a>
-            <div class="subnav">
-              <button class="subnavbtn">Work <i class="fa fa-caret-down"></i></button>
-              <div class="subnav-content">
-                <a href="freshfusion.html">FreshFusion</a>
-                <a href="#link2">findMyDoc</a>
-                <a href="#link3">Traveco</a>
-                <a href="studdybuddy.html">StuddyBuddy</a>
-              </div>
-            </div>
-            <a href="about.html">About Me</a>
-            <a href="contact.html">Contact Me!</a>
-          </div>
-    
-    </nav>
-    <style>
+    <header>
+  
+  
+  <style>
       #titleHeader {
           background-color: transparent;
           color: #d0576b;
-          padding:40px;
           text-align: left;
       }
       #bodyText {
           background-color: transparent;
           color: #595857;
-          padding:40px;
           text-align: left;
       }
       #subTitle {
           background-color: transparent;
           color: #595857;
-          padding:40px;
           text-align: left;
       }
   
+      #casestudyimg {
+          width: 50%;
+      }
   
+      #hero {background-color:#ffffff;
+          padding: 20px 0;
+      
+      }
+  
+      #hero h1 {
+          margin: 0;
+          padding: 0.67em 0;
+      }
   
   </style>
+  
+  <img class = "logo" src="./img/logos/satokogruson_logo.svg" 
+  width="48"
+  height="48"/>
+  <nav>
+      <ul class="nav_links">
+          <li><a href="index.html">Work</a></li>
+          <li><a href="about.html">About Me</a></li>
+      </ul>
+  </nav>
+  <a class = "cta" href="contact.html"><button>Contact</button></a>
+  </header>
 </head>
 <body>
     <div>
+      <div id="contactform">
+        <div class="container">
         <h1 id="titleHeader">Contact Me!</h1>
-        <span>In need of a UI Designer? Let's get in touch!</span>
+        <div class="row"></div>
+        <h3>In need of a UI Designer? Let's get in touch!</h3>
+        <div class="row"></div>
     </div>
     <div class="container">
         <form action="action_page.php">
@@ -74,7 +76,7 @@
           <input type="text" id="email" name="email" placeholder="Your Email Address..."><br />
      
           <label for="country">Which Country do you reside in?<br /></label>
-          <select id="country" name="country"> <br />
+          <select id="country" name="country"><br />
             <option value="australia">Australia</option>
             <option value="canada">Canada</option>
             <option value="germany">Germany</option>
@@ -94,4 +96,9 @@
         </form>
       </div>   
 </body>
+
+<footer>
+  <p id="bodyText">&copy; Satoko Gruson 2023</p>
+
+</footer>
 </html>
