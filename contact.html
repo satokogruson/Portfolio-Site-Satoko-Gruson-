@@ -1,15 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://use.typekit.net/fxl4juw.css">
-    <link rel="stylesheet" type="text/css" href="./css/style.css"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Contact Me!</title>
-    <link rel="icon" type="image/png" href="./img/logos/favicon.ico" sizes="32x32" />
-    <header>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="./css/style.css"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://use.typekit.net/fxl4juw.css">
+  <script src="https://kit.fontawesome.com/56b3f9aebf.js" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+  <script src="js/scripts.js"></script>
+
+  <title>UI/UX Design Portfolio</title>
+  <link rel="icon" type="image/x-icon" href="./img/logos/favicon-32x32.png">
+
+
   
   
   <style>
@@ -34,19 +39,23 @@ font-family: "aktiv-grotesk", sans-serif;
 
 
   </style>
-  
-  <img class = "logo" src="./img/logos/satokogruson_logo.svg" 
-  width="48"
-  height="48"/>
-  
-  
-  <nav>
-      <ul class="nav_links">
-          <li><a href="index.html">Work</a></li>
-          <li><a href="about.html">About Me</a></li>
-      </ul>
-  </nav>
-  <a class = "cta" href="contact.html"><button>Contact</button></a>
+  <header>
+ 
+  <div class="navtoggle" id="myNavtoggle">  
+    <nav>
+    <picture><img class="logo" src= "./img/logos/satokogruson_logo.svg" width="50" height="50"/></picture>
+
+                <ul>
+                    <li><a href="index.html">Work</a></li>
+                    <li><a href="about.html">About Me</a></li>
+                    <li><a class = "cta" href="contact.html"><button>Contact</button></a></li>
+                  <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
+                </ul>
+
+            </nav>
+          </div>   
+        </div>    
+
   </header>
 </head>
 
@@ -89,6 +98,7 @@ font-family: "aktiv-grotesk", sans-serif;
        
       
         </form>
+        <div class="row"></div>
       </div>  
 </body>
 </main> 

@@ -5,44 +5,63 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="./css/style.css"/>
-    <link rel="stylesheet" href="https://use.typekit.net/fxl4juw.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>UI/UX Design Portfolio</title>
-    <link rel="icon" type="image/png" href="./img/logos/favicon.ico" sizes="32x32" />
+    <link rel="stylesheet" href="https://use.typekit.net/fxl4juw.css">
+    <script src="https://kit.fontawesome.com/56b3f9aebf.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+    <script src="js/scripts.js"></script>
 
-    <header>
-        
+    <title>UI/UX Design Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="./img/logos/favicon-32x32.png">
+
+
     <style>
 #about-page h2 h3 { margin-top: 0;}
-    
-    </style>
-    
-    <img class = "logo" src="./img/logos/satokogruson_logo.svg" 
-    width="48"
-    height="48"/>
-    <nav>
-        <ul class="nav_links">
-            <li><a href="index.html">Work</a></li>
-            <li><a href="about.html">About Me</a></li>
-        </ul>
-    </nav>
-    <a class = "cta" href="contact.html"><button>Contact</button></a>
-    </header>
-</head> 
 
-<body id="about-page"></body>
+.subcontent h2 {margin-left: auto;}
+
+    </style>
+
+</head> 
+    
+<body id="about-page">
+<header>
+    <div class="navtoggle" id="myNavtoggle">  
+        <nav>
+        <picture><img class="logo" src= "./img/logos/satokogruson_logo.svg" width="50" height="50"/></picture>
+    
+                    <ul>
+                        <li><a href="index.html">Work</a></li>
+                        <li><a href="about.html">About Me</a></li>
+                        <li><a class = "cta" href="contact.html"><button>Contact</button></a></li>
+                      <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
+                    </ul>
+    
+                </nav>
+              </div>   
+            </div>    
+    
+    </header>
+
+
 <main>
 
- <div class = "container">
-        <h1>About Me</h1>
-        <div class="row"></div>
-        <h2>Nice to meet you Virtually!</h2>
-        <div class="row"></div>
+    
+<div class = "container">
+    
+    <h1>About Me</h1>
 
-<picture> <source srcset="./img/satokogruson@1x.png" media="(max-width:767px)" >
-        <img src="./img/satokogruson@2x.png" width="200px" alt="My Image">
-    </picture>
-    <div class="row"></div>
+    <div class = "row"></div>
+
+    <div class="subhead">
+        <div class="subcontent">
+          <img class = "profile" src="./img/satokogruson@2x.png" alt="profile pic">
+          <h2>Nice to meet you Virtually!</h2>
+        </div>
+      </div>
+ 
+      <div class="row"></div>
+
 <p>
     My name is Satoko, and I am a UI/UX designer based in Munich, Germany, with a multicultural background and over 10 years of corporate experience.
 </p><br/>
@@ -61,7 +80,9 @@
 <a class ="btn-primary" href="./files/satokogruson_cv.pdf">Download my CV</a>
 <div class="row"></div>
 
+
 <h2>My Experience</h2>
+<hr>
 
 <div class = "col-container">
 <div class = "col">
@@ -94,25 +115,36 @@
 
 </div>
 </div>
-</div>
+
 
 </main>
 </body>
 
 <footer>
-    <div class ="container">
-        <h2>Contact Me!</h2>
-       <p>If you are interested in my work, please get in touch!</p>
-       <br> 
-       <a class = "cta" href="contact.html"><button>Contact</button></a>  
-    <div>
-    <ul type="none">
-        <ul id="horizontal-list">
-        <li><a href="https://www.linkedin.com/in/satokogruson/" target="_blank"><img src="css/logo/linkedin_logo.svg" width="32px" alt="LinkedIn Logo"></a></li>
-        <li><a href="https://www.behance.net/satokogruson" target="_blank"><img src="css/logo/behance_logo.svg" width="32px" alt=""></a></li>
-    </ul>
-    </div>  
-    <p>&copy; Satoko Gruson 2023</p>
+    <div class="container">
+        <div class="col-md-4 col-sm-6 col-xs-12">
+          <div class="contact-1">
+            <h3>Contact Me</h3>
+            <p>If you are interested in my work, please get in touch!</p>
+       <div><a class = "cta" href="contact.html"><button>Contact</button></a></div>  
+             </div>
+          </div>
+        <div class="col-md-4 col-sm-6 col-xs-12">
+          <div class="contact-2">
+            <h3>Follow Me</h3>
+            <p>Feel free to follow or check out my details. </p>
+            <ul type="none">
+              <ul id="horizontal-list">
+              <li><a href="https://www.linkedin.com/in/satokogruson/" target="_blank"><img src="css/logo/linkedin_logo.svg" width="32px" alt="LinkedIn Logo"></a></li>
+              <li><a href="https://www.behance.net/satokogruson" target="_blank"><img src="css/logo/behance_logo.svg" width="32px" alt=""></a></li>
+          </ul>
+          </div>
+        </div> 
+      </div> 
+    </div> 
+      <div class="row"></div>
+      <p>&copy; Satoko Gruson 2023</p>
+      
 </div> 
     
     </footer>

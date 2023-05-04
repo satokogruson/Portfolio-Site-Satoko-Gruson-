@@ -7,8 +7,9 @@
     <link rel="stylesheet" type="text/css" href="./css/style.css"/>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://use.typekit.net/fxl4juw.css">
-
-
+    <script src="https://kit.fontawesome.com/56b3f9aebf.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+    <script src="js/scripts.js"></script>
 
     <title>UI/UX Design Portfolio</title>
     <link rel="icon" type="image/x-icon" href="./img/logos/favicon-32x32.png">
@@ -28,10 +29,12 @@
 .hero h1{
   margin: 0;
   padding: 0.67em 0;
+  text-align: center;
 }
 
 .hero-text {
-display:block
+display:block;
+text-align: center;
 }
 
 
@@ -63,26 +66,20 @@ display:block
 #sakurasmall {
     animation: 10s move-right infinite alternate linear;
     text-align: left;
-    opacity: 0.3;
+    opacity: 0.5;
 }
 
 #drop-shadow-22 {
-    animation: slow-pulse 2s ease 0s 1 normal forwards;
+  fill:#f09199;
+  animation: filter-animation 10s infinite;
+}
+  @keyframes filter-animation {
+  0% {fill: #c97586; }
+  33% { fill: #e95295; }
+  66% { fill: #a22041; }
+  100% { fill: #aa4c8f;  }
 }
 
-@keyframes slow-pulse {
-	0% {
-		opacity: 1;
-	}
-
-	50% {
-		opacity: 0.2;
-	}
-
-	100% {
-		opacity: 1;
-	}
-}
 
 
 @keyframes move-right {
@@ -96,20 +93,25 @@ display:block
 </head> 
 
 <body>
+
 <header>
 
+  <div class="navtoggle" id="myNavtoggle">  
+    <nav>
+    <picture><img class="logo" src= "./img/logos/satokogruson_logo.svg" width="50" height="50"/></picture>
 
-    <img class = "logo" src="./img/logos/satokogruson_logo.svg" width="50" height="50"/>
-            <nav>
-                <ul class="nav_links">
+                <ul>
                     <li><a href="index.html">Work</a></li>
                     <li><a href="about.html">About Me</a></li>
+                    <li><a class = "cta" href="contact.html"><button>Contact</button></a></li>
+                  <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
                 </ul>
+
             </nav>
-            <a class = "cta" href="contact.html"><button>Contact</button></a>
-        
-</header>
- 
+          </div>   
+        </div>    
+
+</header> 
 
 <main>
 
@@ -119,7 +121,7 @@ display:block
         <h1>Hi, I'm Satoko! I am a UI/UX Designer based in Munich, Germany. </h1>
         <div class="row"></div>
 
-        <span>My multi-cultural background and a master's in Translation & Localization Management will help you widen your target audience! &#128522;</span>
+        <span>My multi-cultural background and a master's in Translation & Localization Management will help you broaden your target audience! &#128522;</span>
          <div class="row"></div> 
         </div>
         <svg id="sakura" data-name="sakura" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 451 482">
@@ -739,12 +741,12 @@ display:block
 
 </div>
 
-
 <div class ="container">
         <h2>My Work</h2>
         <hr>
+        <div class ="row"></div>
 
-<div class="row">
+        <div class ="work">
     <div class="col-md-6">
       <div class="card-content">
             <img src="./img/FreshFusion/cover_FreshFusion@2.png" alt="FreshFusion" style="width:100%"/>
@@ -761,6 +763,7 @@ display:block
 </div> 
 </div> 
 
+
 <div class="col-md-6">
         <div class="card-content">
             <img src="./img/StuddyBuddy/cover_StuddyBuddy@2.png" alt="FreshFusion" style="width:100%"/>
@@ -772,6 +775,8 @@ display:block
         </p>
         <br/>
         <br/>
+        <br/>
+    
         <a class= "btn-primary" href="https://www.behance.net/gallery/167855179/StuddyBuddy-Connect-with-your-studdybuddies">View Project</a>
 
 </div> 
@@ -787,11 +792,12 @@ display:block
         A location-based services travel app for the eco-conscious traveler, who want simple and map-centric navigation. 
     </p>
     <br/>
-    <br/>
+
     <a class= "btn-primary" href="https://www.behance.net/gallery/167863591/Traveco-The-travel-app-for-the-eco-conscious">View Project</a>
 
 </div> 
 </div> 
+
 <div class="col-md-6">
     <div class="card-content">
         <img src="./img/findMyDoc/cover_findMyDoc@2x.png" alt="findMyDoc" style="width:100%"/>
@@ -802,33 +808,44 @@ display:block
         Tired of constantly searching and booking doctor appointments and managing your prescription medications?
     </p>
     <br/>
-    <br/>
+
     <a class= "btn-primary" href="https://www.behance.net/gallery/167856825/findMyDoc-One-stop-shop-for-doctor-appointments">View Project</a>
 
 </div> 
 </div> 
 </div> 
-</div>    
+</div>
+
+
+  
 </main>
-<script src="js/scripts.js"></script>
-console.log("Hello! Welcome to my portfolio site!")
+
 </body>
 
 <footer>
-    <div class ="container">
-        <h2>Contact Me!</h2>
-       <p>If you are interested in my work, please get in touch!</p>
-       <br> 
-       <a class = "cta" href="contact.html"><button>Contact</button></a>  
-    <div>
-    <ul type="none">
-        <ul id="horizontal-list">
-        <li><a href="https://www.linkedin.com/in/satokogruson/" target="_blank"><img src="css/logo/linkedin_logo.svg" width="32px" alt="LinkedIn Logo"></a></li>
-        <li><a href="https://www.behance.net/satokogruson" target="_blank"><img src="css/logo/behance_logo.svg" width="32px" alt=""></a></li>
-    </ul>
-    </div>  
+  <div class="container">
+    <div class="col-md-4 col-sm-6 col-xs-12">
+      <div class="contact-1">
+        <h3>Contact Me</h3>
+        <p>If you are interested in my work, please get in touch!</p>
+   <div><a class = "cta" href="contact.html"><button>Contact</button></a></div>  
+         </div>
+      </div>
+    <div class="col-md-4 col-sm-6 col-xs-12">
+      <div class="contact-2">
+        <h3>Follow Me</h3>
+        <p>Feel free to follow or check out my details. </p>
+        <ul type="none">
+          <ul id="horizontal-list">
+          <li><a href="https://www.linkedin.com/in/satokogruson/" target="_blank"><img src="css/logo/linkedin_logo.svg" width="32px" alt="LinkedIn Logo"></a></li>
+          <li><a href="https://www.behance.net/satokogruson" target="_blank"><img src="css/logo/behance_logo.svg" width="32px" alt=""></a></li>
+      </ul>
+      </div>
+    </div> 
+  </div> 
+
+    <div class="row"></div>
     <p>&copy; Satoko Gruson 2023</p>
-</div> 
     
     </footer>
 
