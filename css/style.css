@@ -350,11 +350,16 @@ main {
         width: 100%;
         margin-right: 20px;
       }
-
+footer .container {
+  display: flex;
+  justify-content: space-between;
+}
       footer {
+        display:block; 
         text-align: left;
         margin: auto;
-        padding:25px;
+        padding-bottom:25px;
+        max-width:1200px;
       }
 
 
