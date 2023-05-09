@@ -599,9 +599,7 @@ color: #ffffff;
 
 main {
   padding-top: 85px;
-.col-md-6{
-  width: 50%;
-}
+
 
 .col {
   width: 50%;
@@ -621,6 +619,7 @@ main {
 }
 
 }
+
 
 
 @media only screen and (min-width: 1440px) {
