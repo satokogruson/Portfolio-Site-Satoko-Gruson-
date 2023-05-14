@@ -16,6 +16,9 @@
    
     <style>
 
+
+
+
 .hero {
     display: flex;
     flex-direction: column;
@@ -75,7 +78,14 @@ text-align: center;
     <picture><img class="logo" src= "./img/logos/satokogruson_logo.svg" width="50" height="50"/></picture>
 
                 <ul>
-                    <li><a href="index.html">Work</a></li>
+                    <li class="dropdown">
+                      <a href="javascript:void(0)" class="dropbtn">Work</a>
+                      <div class="dropdown-content">
+                        <a href="freshfusion.html">FreshFusion</a>
+                        <a href="#">StuddyBuddy</a>
+                        <a href="#">Traveco</a>
+                        <a href="#">findMyDoc</a>
+                      </div>
                     <li><a href="about.html">About Me</a></li>
                     <li><a class = "cta" href="contact.html" onclick="menuToggle()"><button>Contact</button></a></li>
                   <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>

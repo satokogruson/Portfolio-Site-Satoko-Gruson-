@@ -10,6 +10,7 @@
     <script src="https://kit.fontawesome.com/56b3f9aebf.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
     <script src="js/scripts.js"></script>
+    <script src="path/to/vanilla.js"></script>
 
     <title>UI/UX Design Portfolio</title>
     <link rel="icon" type="image/x-icon" href="./img/logos/favicon-32x32.png">
@@ -17,6 +18,7 @@
 
     <style>
 #about-page h2 h3 { margin-top: 0;}
+
 
 
 .animate-charcter
@@ -39,6 +41,8 @@
   animation: textclip 2s linear infinite;
   display: inline-block;
   font-size: 40px;
+  font-size: clamp(1.875rem, 1.165vw + 1.602rem, 3rem);
+  line-height: clamp(2.813rem, 2.058vw + 2.33rem, 4.8rem);
 }
 
 @keyframes textclip {
@@ -57,12 +61,19 @@
         <nav>
         <picture><img class="logo" src= "./img/logos/satokogruson_logo.svg" width="50" height="50"/></picture>
     
-                    <ul>
-                        <li><a href="index.html">Work</a></li>
-                        <li><a href="about.html">About Me</a></li>
-                        <li><a class = "cta" href="contact.html"><button>Contact</button></a></li>
-                      <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
-                    </ul>
+        <ul>
+          <li class="dropdown">
+            <a href="index.html" class="dropbtn">Work</a>
+            <div class="dropdown-content">
+              <a href="freshfusion.html">FreshFusion</a>
+              <a href="#">StuddyBuddy</a>
+              <a href="#">Traveco</a>
+              <a href="#">findMyDoc</a>
+            </div>
+          <li><a href="about.html">About Me</a></li>
+          <li><a class = "cta" href="contact.html" onclick="menuToggle()"><button>Contact</button></a></li>
+        <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
+      </ul>
                 </nav>
               </div>   
             </div>    
@@ -76,7 +87,7 @@
         <div class= "profile"> <img src="./img/satoko_gruson_profile.png" alt="profile pic" width = "200px" >     
         </div>
           <div class = "proftext">
-            <h2 class="animate-charcter"> Nice to meet you Virtually!</h2>
+            <h1 class="animate-charcter"> Nice to meet you Virtually!</h1>
           </div>
 
       </div>

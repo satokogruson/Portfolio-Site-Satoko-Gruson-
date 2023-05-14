@@ -18,12 +18,61 @@
      
   
   <style>
- 
+ #titleHeader {
+  color:#007144;
+ }
+
+#hero {
+  background-image: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.90) 100%),url('./img/FreshFusion/01 Hero Page_webpage.png');
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#hero h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+#hero p {
+  font-size: 24px;
+  color: #fff;
+}
+
+section {
+padding-top:50px;
+padding-bottom:25px;
+}
+
+section h2 {
+  font-size: clamp(1.5rem, 0.518vw + 1.379rem, 2rem);
+  line-height: clamp(2.4rem, 0.828vw + 2.206rem, 3.2rem);
+  margin-bottom: 20px;
+  color: #007144;
+}
+
+section p {
+  font-size: 18px;
+  font-size: clamp(0.75rem, 0.259vw + 0.689rem, 1rem);
+line-height: clamp(1.125rem, 0.492vw + 1.01rem, 1.6rem);
+}
+
+
+
   </style>
+
+</head>  
+
   <header>
     <div class="navtoggle" id="myNavtoggle">  
       <nav>
-      <picture><img class="logo" src= "./img/logos/satokogruson_logo.svg" width="50" height="50"/></picture>
+        <picture><img class="logo" src= "./img/logos/satokogruson_logo.svg" width="50" height="50"/></picture>
   
                   <ul>
                       <li><a href="index.html">Work</a></li>
@@ -37,46 +86,192 @@
           </div>    
   
   </header>
-</head>    
+  
 <body>
+<main>
 
-            <div id = "casestudy">
-              <div class="container">
-               <div>
+<div class = "container">
 
-               <h1 id="titleHeader">Case Study - FreshFusion</h1>
+  <section id="hero">
+    <h1>FreshFusion</h1>
+    <p>Shop for groceries and meal kits with just a few taps or clicks away!</p>
+  </section>
 
-               <picture> <source srcset="./img/FreshFusion/05 Mock Up Images@1x.jpg" media="(max-width:767px)">
-                <img src="./img/FreshFusion/05 Mock Up Images@2x.jpg" alt="FreshFusion MockUps" style="width:100%">
-            </picture>
+  <section id="project">
+    <h2>Project Overview</h2>
+    <p>FreshFusion is  an online grocery shopping app designed to make grocery shopping a breeze for users. The app offers an extensive list of recipes and meal kits for busy users who don't have time to shop and prepare meals. Users can shop for groceries and meal kits from the comfort of their homes or while on the go. The app is user-friendly and offers a seamless shopping experience. </p>
+  </section>
 
-            </div>
-        <h2 id="subTitle">Overview</h2>
-        <p id="bodyText">The number of grocery shoppers using a mobile devices is on an upward trend. Furthermore, the number of pickup orders is projected to grow in 2023.</p>
-        <p id="bodyText"> We need an app that offers flexibility in delivery times and options to meet these increasing demands. Customers can choose the most convenient delivery time for them and also select from various delivery options such as home delivery, pickup from a designated location, or even same-day delivery in some cases.</p>
-        <p id="bodyText">FreshFusion was designed to offer various products, including fresh produce, dairy products, meat and poultry, pantry staples, snacks, and beverages. It will also offer meal kits, which include pre-portioned ingredients and recipes that customers can use to prepare a meal at home. Meal kits can be a popular choice for customers who are short on time or looking to try out new recipes without the hassle of grocery shopping.</p>
-        <p id="bodyText">The e-grocery store will also offer competitive pricing, discounts, and loyalty programs to attract customers.</p>
-        <p id="bodyText">We will aim to provide excellent customer service, including easy returns, refunds, and responsive support channels.</p>
-        <pp id="bodyText">Overall, FreshFusion aims to offer an attractive proposition for busy customers looking for convenience and ease of shopping for food items.</p>
+  <section id="problem">
+    <h2>Problem Statement</h2>
+    <p>The number of grocery shoppers using a mobile devices is on an upward trend. Furthermore, the number of pickup orders is projected to grow in 2023.</p></br>
+    <p >Not only is the demand increading, users find that grocery shopping can be time-consuming and stressful, especially for busy individuals who don't have the time to shop and prepare meals.</p> <br><p> Many people find it challenging to come up with meal ideas and end up buying the same groceries repeatedly. Additionally, some people may not know how to cook, making it even harder to plan meals and shop for ingredients.</p>
+  </section>
 
-  </div>
+  <section id="solution">
+    <h2>Solution</h2>
+    <p>FreshFusion is  an online grocery shopping app designed to make grocery shopping a breeze for users. The app offers an extensive list of recipes and meal kits for busy users who don't have time to shop and prepare meals. Users can shop for groceries and meal kits from the comfort of their homes or while on the go. The app is user-friendly and offers a seamless shopping experience. </p>
+  </section>
+<section id="image">
+    <picture> 
+      <img src="./img/FreshFusion/Approach.png" alt="FreshFusion Approach" style="width:100%"  onclick="enlargeImg()" id="img1">
+  </picture>
+</section>
+
+  <section id="design">
+    <h2>Design Process</h2>
+    <p>The following steps were followed to design FreshFusion that meets the needs of the target audience and provides a great user experience.</p>
+  </section>
+  <section id="image">
+  <picture> 
+    <img src="./img/FreshFusion/Design Process.png" alt="FreshFusion Design Process" style="width:100%" onclick="enlargeImg()" id="img2">
+</picture>
+</section>
+
+  <section id="timeline">
+    <h2>Project Timeline</h2>
+    <p>General research was conducted to assess the current market trends on on-line grocery shopping. 
+      Low and mid-fidelity frames were created and tested for accessibility and usability.</p>
+  </section>
+
+  <section id="image">
+    <picture> 
+      <img src="./img/FreshFusion/Timeline  Frame.png" alt="FreshFusion Timeline" style="width:100%" onclick="enlargeImg()" id="img3">
+  </picture>
+  </section>
+
+
+  <section id="userpersona">
+    <h2>User Persona</h2><br>
+    <picture> 
+      <img src="./img/FreshFusion/User Persona.png" alt="FreshFusion User Persona" style="width:100%" onclick="enlargeImg()" id="img4">
+  </picture>
+  </section>
+
+  <section id="userflow">
+    <h2>User flow</h2>
+  </section>
+  <section id="image">
+    <picture> 
+    <img src="./img/FreshFusion/Userflow.png" alt="FreshFusion userflow" style="width:100%" onclick="enlargeImg()" id="img5">
+  </picture>
+  </section>
+
+  <section id="typography">
+    <h2>Typography, Color Palette & Logo</h2>
+  </picture>
+</section>
+    <section id="image">
+    <picture> 
+      <img src="./img/FreshFusion/Typography.png" alt="FreshFusion Typography" style="width:100%" onclick="enlargeImg()" id="img5">
+    </picture>
+  </section>
+
+  <section id="uielement">
+    <h2>UI Elements</h2>
+  </picture>
+</section>
+    <section id="image">
+    <picture> 
+      <img src="./img/FreshFusion/UI elements.png" alt="FreshFusion UI elements" style="width:100%" onclick="enlargeImg()" id="img5">
+    </picture>
+</section>
+
+<section id="wireframe">
+  <h2>Prototype</h2>
+
+  
+<div class="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="./img/FreshFusion/High Fidelity 9.png" alt="Image 1">
     </div>
+    <div class="carousel-item">
+      <img src="./img/FreshFusion/High Fidelity 10.png" alt="Image 2">
+    </div>
+    <div class="carousel-item">
+      <img src="./img/FreshFusion/High Fidelity 11.png" alt="Image 3">
+    </div>
+    <div class="carousel-item">
+      <img src="./img/FreshFusion/High Fidelity 12.png" alt="Image 4">
+    </div>
+    <div class="carousel-item">
+      <img src="./img/FreshFusion/High Fidelity 13.png" alt="Image 5">
+    </div>
+    <div class="carousel-item">
+      <img src="./img/FreshFusion/High Fidelity 14.png" alt="Image 6">
+    </div>
+  </div>
+</div>
+</section>
 
-<div>
-    <picture> <source srcset="./img/FreshFusion/FreshFusion Mac@1x.png" media="(max-width:767px)">
-        <img src="./img/FreshFusion/FreshFusion Mac@2x.png" alt="FreshFusion MockUps" style="width:100%">
-    </picture>
-
-    <picture> <source srcset="./img/FreshFusion/FreshFusion iPad@1x.pngg" media="(max-width:767px)">
-        <img src="./img/FreshFusion/FreshFusion iPad@2x.png" alt="FreshFusion MockUps" style="width:100%">
-    </picture>
 
 </div>
 
-</body>
+<script>
+
+  let slideIndex = 0;
+  showSlides();
+  
+  function showSlides() {
+    let i;
+    let slides = document.getElementsByClassName("carousel-item");
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {
+      slideIndex = 1;
+    }
+    slides[slideIndex - 1].style.display = "block";
+    setTimeout(showSlides, 3000); // Change image every 3 seconds
+  }
+
+
+
+
+
+</script>
+
+
+</main>
+
 
 <footer>
-  <p>&copy; Satoko Gruson 2023</p>
+  <div class="row"> 
+    <h3>Follow Me</h3>
 
-</footer>
+  <div class="flexbox-panel">
+
+      <div class="flex-item">
+        <a href="https://www.linkedin.com/in/satokogruson/" target="_blank"><img
+          src="css/logo/linkedin_logo.svg" width="32px" alt="LinkedIn Logo"></a>
+        </div>
+
+
+        <div class="flex-item">
+          <a href="satokogruson@gmail.com" target="_blank"><img src="css/logo/email_icon.svg"
+          width="32px" alt=""></a>
+          </div>
+
+          <div class="flex-item">
+            <a href="https://www.behance.net/satokogruson" target="_blank"><img src="css/logo/behance_logo.svg"
+              width="32px" alt=""></a>
+            </div>
+
+
+            <div class="flex-item">
+              <a href="https://github.com/satokogruson" target="_blank"><img src="css/logo/github_logo.svg"
+                width="32px" alt=""></a>
+              </div>
+
+      </div>
+    </div> 
+
+        <div class="footer-row">
+          <p>&copy; Satoko Gruson 2023</p>
+        </div>
+  </footer>
+
+</body>
 </html>
