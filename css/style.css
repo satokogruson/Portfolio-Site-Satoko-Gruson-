@@ -21,7 +21,7 @@ main {
 
 li a:hover,
 .dropdown:hover .dropbtn {
-  background-color: rgb(204, 72, 94, 0.5);
+  background-color: rgba(204, 72, 94, 0.502);
   padding-top: 10px;
   padding-bottom: 10px;
 }
@@ -95,6 +95,16 @@ body {
   margin: auto;
   padding-top: 20px;
   padding-bottom: 20px;
+}
+
+.work {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+  width: 100%;
+  max-width: 100%;
+  justify-content: center;
+  margin-top: 20px;
 }
 
 li,
@@ -189,7 +199,7 @@ nav li a:hover {
   display: block;
   padding: 10px 0;
   height: 50px;
-  border-bottom: 1px solid rgba(208, 87, 107, 0.8);
+  border-bottom: 1px solid rgba(204, 72, 94, 0.8);
 }
 
 .navtoggle.responsive li:last-child {
@@ -198,7 +208,7 @@ nav li a:hover {
 
 button, .cta {
   padding: 9px 25px;
-  background-color: #d0576b;
+  background-color: rgb(204, 72, 94);
   border: none;
   color: #fff;
   border-radius: 5px;
@@ -209,7 +219,7 @@ button, .cta {
 }
 
 button:hover {
-  background-color: rgba(208, 87, 107, 0.8);
+  background-color: rgba(204, 72, 94, 0.8);
 }
 
 .btn-primary {
@@ -332,72 +342,6 @@ ul#horizontal-list li {
   clear: both;
 }
 
-h2,
-h3,
-h4,
-label,
-input {
-  font-family: "aktiv-grotesk-condensed", sans-serif;
-  font-weight: 700;
-  font-style: normal;
-  line-height: 1.4;
-  margin: auto;
-}
-
-h1 {
-  font-family: "aktiv-grotesk-condensed", sans-serif;
-  color: #595857;
-  font-style: normal;
-  font-weight: 900;
-  margin: 0 auto;
-  word-wrap: break-word;
-  font-size: clamp(1.875rem, 1.165vw + 1.602rem, 3rem);
-  line-height: clamp(2.813rem, 2.058vw + 2.33rem, 4.8rem);
-}
-
-h2 {
-  color: #595857;
-  margin: 0 auto;
-  font-size: clamp(1.25rem, 0.518vw + 1.129rem, 1.75rem);
-  line-height: clamp(1.875rem, 0.958vw + 1.65rem, 2.8rem);
-}
-
-h3 {
-  color: #595857;
-  font-size: 20px;
-  margin: 0 auto;
-}
-
-h4,
-label {
-  color: #595857;
-  font-size: 16px;
-  margin: 0 auto;
-}
-
-span,
-input,
-option,
-li,
-::placeholder {
-  font-family: "aktiv-grotesk", sans-serif;
-  font-weight: 200;
-  color: #595857;
-  margin: 0 auto;
-  font-size: clamp(0.75rem, 0.259vw + 0.689rem, 1rem);
-  line-height: clamp(1.125rem, 0.492vw + 1.01rem, 1.6rem);
-}
-
-p {
-  font-family: "aktiv-grotesk", sans-serif;
-  font-size: 16px;
-  font-weight: 200;
-  line-height: 1.6;
-  color: #595857;
-  margin: 0 auto;
-  text-align: justify;
-}
-
 .img {
   width: 100%;
 }
@@ -440,7 +384,7 @@ textarea {
 }
 
 input[type="submit"] {
-  background-color: #d0576b;
+  background-color: rgb(204, 72, 94);
   color: white;
   padding: 12px 20px;
   border: none;
@@ -510,7 +454,7 @@ footer {
 }
 
 .col-md-6:hover {
-  background-color: #d0576b66;
+  background-color: rgb(204, 72, 94 0.4);
 }
 
 .row,
@@ -530,26 +474,48 @@ h1 {
   padding: 0 20px;
 }
 
-.work {
-  display: flex;
-  flex-wrap: wrap;
-  margin-bottom: 30px;
-  width: 100%;
-  max-width: 100%;
-  justify-content: center;
-  margin-top: 20px;
+h2,
+h3,
+h4,
+label,
+input {
+  font-family: "aktiv-grotesk-condensed", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 1.4;
+  margin: auto;
 }
+
+h4,
+label {
+  color: #595857;
+  font-size: 16px;
+  margin: 0 auto;
+}
+
+p {
+  font-family: "aktiv-grotesk", sans-serif;
+  font-size: clamp(1rem, 0.129vw + 0.97rem, 1.125rem);
+  line-height: clamp(1.5rem, 0.311vw + 1.427rem, 1.8rem);
+  font-weight: 200;
+  color: #595857;
+  margin: 0 auto;
+  text-align: justify;
+}
+
 
 h2 {
   color: #595857;
-  font-size: 28px;
+  font-size: clamp(1.5rem, 0.518vw + 1.379rem, 2rem);
+  line-height: clamp(2.4rem, 0.828vw + 2.206rem, 3.2rem);
   margin: 0 auto;
   padding: 0 20px;
 }
 
 h3 {
   color: #595857;
-  font-size: 20px;
+  font-size: clamp(1.375rem, 0.259vw + 1.314rem, 1.625rem);
+  line-height: clamp(2.063rem, 0.557vw + 1.932rem, 2.6rem);
   margin: 0 auto;
   padding: 0 20px;
 }
@@ -568,22 +534,26 @@ input,
 option,
 li {
   font-family: "aktiv-grotesk", sans-serif;
-  font-size: 16px;
   font-weight: 200;
-  line-height: 1.6;
   color: #595857;
   margin: 0 auto;
   padding: 0 20px;
+  font-size: clamp(1rem, 0.129vw + 0.97rem, 1.125rem);
+  line-height: clamp(1.5rem, 0.311vw + 1.427rem, 1.8rem);
 }
 
 ::placeholder {
   font-family: "aktiv-grotesk", sans-serif;
-  font-size: 16px;
   font-weight: 200;
-  line-height: 1.6;
   color: #cccac8;
   margin: 0 auto;
   padding: 0 20px;
+  font-size: clamp(0.75rem, 0.259vw + 0.689rem, 1rem);
+  line-height: clamp(1.125rem, 0.492vw + 1.01rem, 1.6rem);
+}
+
+span {
+  text-align: center;
 }
 
 .col-md-6 img {
@@ -627,8 +597,6 @@ li {
 }
 
 .col-md-6 p {
-  font-size: 16px;
-  line-height: 1.5;
   margin-bottom: 20px;
   text-align: left;
 }
@@ -676,6 +644,15 @@ li {
 
 .carousel-item img {
   width: 100%;
+}
+
+.footer-row{
+  max-width: 1200px;
+  margin: 8px -16px;
+}
+.copyright {
+  text-align: center;
+  margin: 0;
 }
 
 @media only screen and (min-width: 640px) {
