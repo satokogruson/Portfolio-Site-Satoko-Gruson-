@@ -1,66 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="./css/style.css"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://use.typekit.net/fxl4juw.css">
-    <script src="https://kit.fontawesome.com/56b3f9aebf.js" crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
-    <script src="js/scripts.js"></script>
-    <script src="path/to/vanilla.js"></script>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="./css/style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://use.typekit.net/fxl4juw.css">
+  <script src="https://kit.fontawesome.com/56b3f9aebf.js" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"
+    integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+  <script src="js/scripts.js"></script>
+  <script src="path/to/vanilla.js"></script>
 
-    <title>UI/UX Design Portfolio</title>
-    <link rel="icon" type="image/x-icon" href="./img/logos/favicon-32x32.png">
-
-
-    <style>
-#about-page h2 h3 { margin-top: 0;}
+  <title>UI/UX Design Portfolio</title>
+  <link rel="icon" type="image/x-icon" href="./img/logos/favicon-32x32.png">
 
 
+  <style>
+    #about-page h2 h3 {
+      margin-top: 0;
+    }
 
-.animate-charcter
-{
-  text-transform: uppercase;
-  background-image: linear-gradient(
-    -225deg,
-    #fc325e 0%,
-    #fc6586 29%,
-    #fc97ad 67%,
-    #f5b1aa 100%
-  );
-  background-size: auto auto;
-  background-clip: border-box;
-  background-size: 200% auto;
-  color: #fff;
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  animation: textclip 2s linear infinite;
-  display: inline-block;
-  font-size: 40px;
-  font-size: clamp(1.875rem, 1.165vw + 1.602rem, 3rem);
-  line-height: clamp(2.813rem, 2.058vw + 2.33rem, 4.8rem);
-}
 
-@keyframes textclip {
-  to {
-    background-position: 200% center;
-  }
-}
 
-    </style>
+    .animate-charcter {
+      text-transform: uppercase;
+      background-image: linear-gradient(-225deg,
+          #595857 0%,
+          #ccc0c2 29%,
+          #fc97ad 67%,
+          #fccad5 100%);
+      background-size: auto auto;
+      background-clip: border-box;
+      background-size: 200% auto;
+      color: #fff;
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: textclip 2s linear infinite;
+      display: inline-block;
+      font-size: 40px;
+      font-size: clamp(1.875rem, 1.165vw + 1.602rem, 3rem);
+      line-height: clamp(2.813rem, 2.058vw + 2.33rem, 4.8rem);
+    }
 
-</head> 
-    
+    @keyframes textclip {
+      to {
+        background-position: 200% center;
+      }
+    }
+  </style>
+
+</head>
+
 <body id="about-page">
-<header>
-    <div class="navtoggle" id="myNavtoggle">  
-        <nav>
-          <picture><img class="logo" src= "./img/logos/satokogruson_logo.svg" width="48" height="48" alt="SG logo"/></picture>
-    
+  <header>
+    <div class="navtoggle" id="myNavtoggle">
+      <nav>
+        <img class="logo" src="./img/logos/satokogruson_logo.svg" alt="SG logo" ref="index.html" />
         <ul>
           <li class="dropdown">
             <a href="index.html" class="dropbtn">Work</a>
@@ -69,74 +68,81 @@
               <a href="#">StuddyBuddy</a>
               <a href="#">Traveco</a>
               <a href="#">findMyDoc</a>
-            </div></li>
+            </div>
+          </li>
           <li><a href="about.html">About Me</a></li>
-          <li><a class = "cta" href="contact.html">Contact</a></li>
-        <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
-      </ul>
-                </nav>
-              </div>   
+          <li><a class="cta" href="contact.html">Contact</a></li>
+          <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-    
-    </header>
-
-
-<main>  
-  <div class = "container">
-        <div class="subcontent">
-        <div class= "profile"> <img src="./img/satoko_gruson_profile.png" alt="profile pic" width="200">     
+  <main>
+    <div class="container">
+      <div class="subcontent">
+        <div class="profile"> <img src="./img/satoko_gruson_profile.png" alt="profile pic" width="200">
         </div>
-          <div class = "proftext">
-            <h1 class="animate-charcter"> Nice to meet you Virtually!</h1>
-          </div>
+        <div class="proftext">
+          <h1 class="animate-charcter"> Nice to meet you Virtually!</h1>
+        </div>
 
       </div>
 
-<p>
-    My name is Satoko, and I am a UI/UX designer based in Munich, Germany, with a multicultural background and over 10 years of corporate experience.
-</p><br>
-<p> I have had the opportunity to live in 4 different countries; Canada, Japan, Australia, and now Germany. </p><br>
+      <p>
+        My name is Satoko, and I am a UI/UX designer based in Munich, Germany, with a multicultural background and over
+        10 years of corporate experience.
+      </p><br>
+      <p> I have had the opportunity to live in 4 different countries; Canada, Japan, Australia, and now Germany. </p>
+      <br>
 
-<p>Throughout my career, I have developed my soft skills in diverse cross-functional team management, project planning and management, and research and analysis. These skills have allowed me to successfully lead a diverse team of staff from various departments and manage deliverables within time and within budget.</p><br/>
-<p>In addition, this experience has not only given me a deeper understanding of different cultural nuances but also a passion for designing and localizing products and services to meet the target needs.</p><br/>
+      <p>Throughout my career, I have developed my soft skills in diverse cross-functional team management, project
+        planning and management, and research and analysis. These skills have allowed me to successfully lead a diverse
+        team of staff from various departments and manage deliverables within time and within budget.</p><br />
+      <p>In addition, this experience has not only given me a deeper understanding of different cultural nuances but
+        also a passion for designing and localizing products and services to meet the target needs.</p><br />
 
-<p>Over the years, I have completed a master's degree in Translation and Localization Management, a UX/UI design boot camp, and continue to self-educate to improve my technical skills in this rapidly evolving world of design! I am proficient in various design software, including Figma, Adobe Creative Suite, and InVision.
-</p><br>
-<p>In my spare time, I enjoy traveling and hiking with my husband and boy-girl twin, exploring new cultures, and great food. These experiences help me stay inspired and open-minded in my work.</p><br/>
-<p>Thank you for taking the time to read my story. If you have any questions or would like to discuss a project, please don't hesitate to get in touch!</p>
-<br>
+      <p>Over the years, I have completed a master's degree in Translation and Localization Management, a UX/UI design
+        boot camp, and continue to self-educate to improve my technical skills in this rapidly evolving world of design!
+        I am proficient in various design software, including Figma, Adobe Creative Suite, and InVision.
+      </p><br>
+      <p>In my spare time, I enjoy traveling and hiking with my husband and boy-girl twin, exploring new cultures, and
+        great food. These experiences help me stay inspired and open-minded in my work.</p><br />
+      <p>Thank you for taking the time to read my story. If you have any questions or would like to discuss a project,
+        please don't hesitate to get in touch!</p>
+      <br>
 
-<div class="row"></div>
-<a class ="btn-primary" href="./files/satokogruson_cv.pdf">Download my CV</a>
-</div>
+      <div class="row"></div>
+      <a class="btn-primary" href="./files/satokogruson_cv.pdf">Download my CV</a>
+    </div>
 
-<div class="container">
-<h2>My Experience</h2>
-<hr>
+    <div class="container">
+      <h2>My Experience</h2>
+      <hr>
 
-<div class = "col-container">
-<div class = "col">
-    <h3>Relevant Skills</h3>
-        <br/>
-    
-            <ul>
-                <li>Cross-functional project management</li>
-                <li>Research skills (Qualitative and Quantitative)</li> 
-                <li>Localization and Internationalization</li>
-                <li>Interaction design principles</li>
-                <li>Branding, typography and color theory</li>
-                <li>Wire-framing and prototyping</li>
-                <li>Style guides</li>
-                <li>User research and Personas</li>
-            </ul>  
-   
-</div>
-<div class = "col">
-    <h3>Tools I use</h3>
-    <br>
-        <ul>
+      <div class="col-container">
+        <div class="col">
+          <h3>Relevant Skills</h3>
+          <br />
+
+          <ul>
+            <li>Cross-functional project management</li>
+            <li>Research skills (Qualitative and Quantitative)</li>
+            <li>Localization and Internationalization</li>
+            <li>Interaction design principles</li>
+            <li>Branding, typography and color theory</li>
+            <li>Wire-framing and prototyping</li>
+            <li>Style guides</li>
+            <li>User research and Personas</li>
+          </ul>
+
+        </div>
+        <div class="col">
+          <h3>Tools I use</h3>
+          <br>
+          <ul>
             <li>Figma</li>
-            <li>Adobe Photoshop and Illustrator</li> 
+            <li>Adobe Photoshop and Illustrator</li>
             <li>InVision</li>
             <li>Usability Hub</li>
             <li>Balsamiq Wireframes</li>
@@ -145,50 +151,47 @@
             <li>Hotjar</li>
           </ul>
 
-</div>
-</div>
-</div>
+        </div>
+      </div>
+    </div>
+  </main>
 
 
+  <footer>
+    <div class="row">
+      <h3>Follow Me</h3>
 
+      <div class="flexbox-panel">
 
-</main>
-
-
-<footer>
-  <div class="row"> 
-    <h3>Follow Me</h3>
-
-  <div class="flexbox-panel">
-
-      <div class="flex-item">
-        <a href="https://www.linkedin.com/in/satokogruson/" target="_blank"><img
-          src="css/logo/linkedin_logo.svg" width="32" alt="linkedin"></a>
+        <div class="flex-item">
+          <a href="https://www.linkedin.com/in/satokogruson/" target="_blank"><img src="css/logo/linkedin_logo.svg"
+              width="32" alt="linkedin"></a>
         </div>
 
 
         <div class="flex-item">
-          <a href="satokogruson@gmail.com" target="_blank"><img src="css/logo/email_icon.svg"
-          width="32" alt="email"></a>
-          </div>
+          <a href="satokogruson@gmail.com" target="_blank"><img src="css/logo/email_icon.svg" width="32"
+              alt="email"></a>
+        </div>
 
-          <div class="flex-item">
-            <a href="https://www.behance.net/satokogruson" target="_blank"><img src="css/logo/behance_logo.svg"
-              width="32" alt="behance"></a>
-            </div>
+        <div class="flex-item">
+          <a href="https://www.behance.net/satokogruson" target="_blank"><img src="css/logo/behance_logo.svg" width="32"
+              alt="behance"></a>
+        </div>
 
 
-            <div class="flex-item">
-              <a href="https://github.com/satokogruson" target="_blank"><img src="css/logo/github_logo.svg"
-                width="32" alt="github"></a>
-              </div>
+        <div class="flex-item">
+          <a href="https://github.com/satokogruson" target="_blank"><img src="css/logo/github_logo.svg" width="32"
+              alt="github"></a>
+        </div>
 
       </div>
-    </div> 
+    </div>
 
-        <div class="footer-row">
-          <p class="copyright">&copy; Satoko Gruson 2023</p>
-        </div>
+    <div class="footer-row">
+      <p class="copyright">&copy; Satoko Gruson 2023</p>
+    </div>
   </footer>
-    </body> 
+</body>
+
 </html>
