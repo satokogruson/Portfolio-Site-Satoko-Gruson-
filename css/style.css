@@ -417,9 +417,12 @@ input[type="submit"] {
 
 .formcontainer {
   background-color: #fef4f4;
+  max-width:620px;
+  display:inline-block;
   border-radius: 5px;
   padding: 20px;
-  margin: 10px;
+ margin-left: auto;
+ margin-right: auto;
   box-shadow: 2px 4px 3px rgba(22, 22, 22, 0.1);
   -webkit-box-shadow: 2px 4px 3px rgba(22, 22, 22, 0.1);
   -moz-box-shadow: 2px 4px 3px rgba(22, 22, 22, 0.1);
@@ -626,6 +629,9 @@ span {
   overflow: hidden;
   padding: 3%;
 }
+
+
+
 
 .flex-container {
   display: flex;

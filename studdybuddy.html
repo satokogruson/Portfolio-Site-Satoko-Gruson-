@@ -22,19 +22,15 @@
     }
 
     #hero {
-      background-image: linear-gradient(160deg, rgba(0, 113, 68, 0) 0%, rgba(23, 26, 25, 0.9) 100%), url('./img/StuddyBuddy/01 Hero Page_StuddyBuddy.png');
+      background-color: #354343;
       background-size: cover;
       background-position: center;
-      height: 500px;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
+      height: auto;
     }
 
     #hero h1 {
       color: #fff;
+      text-align: center;
     }
 
     #hero p {
@@ -43,23 +39,35 @@
       font-size: 18px;
       line-height: 1.6;
     }
+    #blackbackground {
+       background-color:#354343;
+    }
+    .picture {
+margin-left: 10%;
+    }
 
     section {
       padding-top: 50px;
       padding-bottom: 25px;
+      margin: auto;
     }
 
     section h2 {
       font-size: clamp(1.5rem, 0.518vw + 1.379rem, 2rem);
       line-height: clamp(2.4rem, 0.828vw + 2.206rem, 3.2rem);
       margin-bottom: 20px;
-      color: #446068;
+      color: #e8b7c5;
     }
 
-    section p {
+    .section, h4, p, span {
       font-size: clamp(0.75rem, 0.259vw + 0.689rem, 1rem);
       line-height: clamp(1.125rem, 0.492vw + 1.01rem, 1.6rem);
+      color:#fff; 
     }
+#image-7 {
+  align-items: center;
+}
+
   </style>
 
 </head>
@@ -74,7 +82,7 @@
             <a href="index.html" class="dropbtn">Work</a>
             <div class="dropdown-content">
               <a href="freshfusion.html">FreshFusion</a>
-              <a href="#">StuddyBuddy</a>
+              <a href="studdybuddy.html">StuddyBuddy</a>
               <a href="#">Traveco</a>
               <a href="#">findMyDoc</a>
             </div>
@@ -90,70 +98,80 @@
   </header>
 
 
-  <main>
+  <main id="blackbackground">
 
     <div class="container">
 
       <section id="hero">
         <h1>StuddyBuddy</h1>
+
         <p>Connect with your StuddyBuddies via SMS and Google Meet to study and collaborate!</p>
+
+        <img src="./img/StuddyBuddy/Hero_StuddyBuddy.png" alt="Hero" width="100%" align-text="center">
+
+
       </section>
+
 
       <section id="project">
         <h2>Project Overview</h2>
-        <p>FreshFusion is an online grocery shopping app designed to make grocery shopping a breeze for users. The app
-          offers an extensive list of recipes and meal kits for busy users who don't have time to shop and prepare
-          meals. Users can shop for groceries and meal kits from the comfort of their homes or while on the go. The app
-          is user-friendly and offers a seamless shopping experience. </p>
+        <p>StuddyBuddy is a mobile productivity app targeting 16-24-year-old students. The app will provide a platform for students to enhance their productivity by organizing their tasks and tracking their progress. The key functionalities of the app will include creating a user profile, creating task lists, and marking tasks as complete. The app will be designed to be user-friendly, visually appealing, and accessible on both iOS and Android platforms. </p>
       </section>
 
       <section id="problem">
         <h2>Problem Statement</h2>
-        <p>The number of grocery shoppers using a mobile devices is on an upward trend. Furthermore, the number of
-          pickup orders is projected to grow in 2023.</p><br>
-        <p>Not only is the demand increading, users find that grocery shopping can be time-consuming and stressful,
-          especially for busy individuals who don't have the time to shop and prepare meals.</p> <br>
-        <p> Many people find it challenging to come up with meal ideas and end up buying the same groceries repeatedly.
-          Additionally, some people may not know how to cook, making it even harder to plan meals and shop for
-          ingredients.</p>
+        <p>Many students in the 16-24 age group struggle with managing their tasks and staying organized, leading to decreased productivity and increased stress levels. There is a need for a mobile app specifically designed to cater to the unique requirements and preferences of students in this age range. Existing productivity apps often lack intuitive interfaces and fail to engage this demographic effectively. Therefore, there is a demand for a user-friendly, feature-rich mobile app that can help students in this age group stay organized and accomplish their tasks efficiently.</p>
       </section>
 
       <section id="solution">
         <h2>Solution</h2>
-        <p>FreshFusion is an online grocery shopping app designed to make grocery shopping a breeze for users. The app
-          offers an extensive list of recipes and meal kits for busy users who don't have time to shop and prepare
-          meals. Users can shop for groceries and meal kits from the comfort of their homes or while on the go. The app
-          is user-friendly and offers a seamless shopping experience. </p>
+        <p>The StuddyBuddy app will provide students in the 16-24 age range with a comprehensive platform to manage their tasks, improve their productivity, and reduce stress levels. By combining user-friendly design, key functionalities, and personalized features, the app aims to become an indispensable tool for student productivity and organization. Sky blue and lilac colors are known to calm the nerves and help you relax. While study is stressful, this app aims to alleviate the stress factor and allow users to not only enjoy entering their details but also collaborate with their StuddyBuddies.</p>
       </section>
-      <div id="image-1">
-        <picture>
-          <img src="./img/FreshFusion/Approach.png" alt="FreshFusion Approach" style="width:100%" onclick="enlargeImg()"
-            id="img1">
-        </picture>
-      </div>
+
+      <section id="features">
+        <h2>Features</h2>
+        <p>The proposed solution is to develop a mobile productivity app that offers a range of features to support students in managing their tasks effectively. The app will be designed with a clean and modern interface, appealing to the target demographic. The key functionalities of the app will include:</p>        
+        </section>
+        <div id="image-1">
+          <picture>
+          <img src="./img/StuddyBuddy/App_Features.png" alt="StuddyBuddy Features" style="width:100%"
+          onclick="enlargeImg()" id="img1">
+      </picture>
+        </div>
+
+
 
       <section id="design">
         <h2>Design Process</h2>
-        <p>The following steps were followed to design FreshFusion that meets the needs of the target audience and
-          provides a great user experience.</p>
+        <p>The design process for StuddyBuddy involves thorough research to understand the target audience's needs and preferences. User flows and core functionalities are defined based on the research findings, followed by the creation of low-fidelity wireframes and intuitive information architecture. The visual design is then developed, aligning with the youthful user base. Interactive prototypes are built and tested with representative users to gather feedback and refine the design. Collaboration with developers ensures a smooth transition from design to a functional app. Continuous iteration based on user feedback and market trends is performed to enhance usability and incorporate new features.</p>
       </section>
       <div id="image-2">
         <picture>
-          <img src="./img/FreshFusion/DesignProcess.png" alt="FreshFusion Design Process" style="width:100%"
+          <img src="./img/StuddyBuddy/StuddyBuddy_DesignProcess.png" alt="StuddyBuddy Design Process" style="width:100%"
             onclick="enlargeImg()" id="img2">
         </picture>
       </div>
 
-      <section id="timeline">
-        <h2>Project Timeline</h2>
-        <p>General research was conducted to assess the current market trends on on-line grocery shopping.
-          Low and mid-fidelity frames were created and tested for accessibility and usability.</p>
+      <section id="competititor">
+        <h2>Competitor Research</h2>
+        <p>By conducting thorough competitor research on MyStudyLife and EGENDA, I obtained valuable insights into their strengths, weaknesses, and user perceptions. This information helped me identify opportunities to differentiate StuddyBuddy, and provide a more compelling user experience for the target audience.</p>
       </section>
-
       <div id="image-3">
         <picture>
-          <img src="./img/FreshFusion/TimelineFrame.png" alt="FreshFusion Timeline" style="width:100%"
-            onclick="enlargeImg()" id="img3">
+          <img src="./img/StuddyBuddy/StudyBuddy_competitor.png" alt="StuddyBuddy competitor" style="width:100%" onclick="enlargeImg()"
+            id="img3">
+        </picture>
+      </div>
+
+      <section id="devphase">
+        <h2>Developing Ideas</h2>
+        <p>Low-fidelity wireframes were used to outline the app's structure and user interface. The initial phase of the design process required significant input to allow for designs that reflect the information architecture, and to ensure intuitive navigation and seamless user experience. Particular consideration was given to the placement of key features, and priority was given to accessibility and usability.</p>
+      </section>
+
+      <div id="image-4">
+        <picture>
+          <img src="./img/StuddyBuddy/Low_fidelity_wireframes.png" alt="StuddyBuddy_devphase" style="width:100%"
+            onclick="enlargeImg()" id="img4">
         </picture>
       </div>
 
@@ -161,22 +179,14 @@
       <section id="userpersona">
         <h2>User Persona</h2>
       </section>
-      <div id="image-4">
+      <div id="image-5">
         <picture>
-          <img src="./img/FreshFusion/UserPersona.png" alt="FreshFusion User Persona" style="width:100%"
-            onclick="enlargeImg()" id="img4">
+          <img src="./img/StuddyBuddy/StuddyBuddy_Userpersonas.png" alt="StuddyBuddy User Persona" style="width:100%"
+            onclick="enlargeImg()" id="img5">
         </picture>
       </div>
 
-      <section id="userflow">
-        <h2>User flow</h2>
-      </section>
-      <div id="image-5">
-        <picture>
-          <img src="./img/FreshFusion/Userflow.png" alt="FreshFusion userflow" style="width:100%" onclick="enlargeImg()"
-            id="img5">
-        </picture>
-      </div>
+
 
       <section id="typography">
         <h2>Typography, Color Palette &amp; Logo</h2>
@@ -184,7 +194,7 @@
       </section>
       <div id="image-6">
         <picture>
-          <img src="./img/FreshFusion/Typography.png" alt="FreshFusion Typography" style="width:100%"
+          <img src="./img/StuddyBuddy/typography_color.png" alt="FreshFusion Typography" style="width:100%"
             onclick="enlargeImg()" id="img6">
         </picture>
       </div>
@@ -194,7 +204,7 @@
       </section>
       <div id="image-7">
         <picture>
-          <img src="./img/FreshFusion/UIelements.png" alt="FreshFusion UI elements" style="width:100%"
+          <img src="./img/StuddyBuddy/UI_Elements.png" alt="FreshFusion UI elements" style="width:100%"
             onclick="enlargeImg()" id="img7">
         </picture>
       </div>
@@ -206,22 +216,16 @@
         <div class="carousel">
           <div class="carousel-inner">
             <div class="carousel-item active">
-              <img src="./img/FreshFusion/HighFidelity_9.png" alt="Image1">
+              <img src="./img/StuddyBuddy/StuddyBuddy_Prototype_0.png" alt="Image1">
             </div>
             <div class="carousel-item">
-              <img src="./img/FreshFusion/HighFidelity_10.png" alt="Image2">
+              <img src="./img/StuddyBuddy/StuddyBuddy_Prototype_1.png" alt="Image2">
             </div>
             <div class="carousel-item">
-              <img src="./img/FreshFusion/HighFidelity_11.png" alt="Image3">
+              <img src="./img/StuddyBuddy/StuddyBuddy_Prototype_2.png" alt="Image3">
             </div>
             <div class="carousel-item">
-              <img src="./img/FreshFusion/HighFidelity_12.png" alt="Image4">
-            </div>
-            <div class="carousel-item">
-              <img src="./img/FreshFusion/HighFidelity_13.png" alt="Image5">
-            </div>
-            <div class="carousel-item">
-              <img src="./img/FreshFusion/HighFidelity_14.png" alt="Image6">
+              <img src="./img/StuddyBuddy/StuddyBuddy_Prototype_3.png" alt="Image4">
             </div>
           </div>
         </div>
