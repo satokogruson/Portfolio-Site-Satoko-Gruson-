@@ -26,16 +26,17 @@
       background-size: cover;
       background-position: center;
       height: auto;
+
     }
 
     #hero h1 {
       color: #fff;
-      text-align: center;
+      text-align: left;
     }
 
     #hero p {
       color: #fff;
-      text-align: center;
+      text-align: left;
       font-size: 18px;
       line-height: 1.6;
     }
@@ -43,13 +44,16 @@
        background-color:#354343;
     }
     .picture {
-margin-left: 10%;
+    margin-left: 10%;
     }
 
     section {
       padding-top: 50px;
       padding-bottom: 25px;
       margin: auto;
+    }
+    section #hero {
+      padding-top: 0;
     }
 
     section h2 {
@@ -59,7 +63,7 @@ margin-left: 10%;
       color: #e8b7c5;
     }
 
-    .section, h4, p, span {
+    .section, h3, h4, p, span {
       font-size: clamp(0.75rem, 0.259vw + 0.689rem, 1rem);
       line-height: clamp(1.125rem, 0.492vw + 1.01rem, 1.6rem);
       color:#fff; 
@@ -103,15 +107,13 @@ margin-left: 10%;
     <div class="container">
 
       <section id="hero">
-        <h1>StuddyBuddy</h1>
-
-        <p>Connect with your StuddyBuddies via SMS and Google Meet to study and collaborate!</p>
-
-        <img src="./img/StuddyBuddy/Hero_StuddyBuddy.png" alt="Hero" width="100%" align-text="center">
-
-
+        <img src="./img/StuddyBuddy/Hero_StuddyBuddy.png" alt="Hero" width="100%">
       </section>
-
+<section id="MyRole">
+  <picture>
+    <img src="./img/StuddyBuddy/MyRole.png" alt="My Role" style="width:100%">
+</picture>
+</section>
 
       <section id="project">
         <h2>Project Overview</h2>
